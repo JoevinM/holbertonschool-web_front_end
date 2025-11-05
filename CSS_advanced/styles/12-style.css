@@ -20,7 +20,7 @@
   --section-header-align: center;
   --section-tagline-transform: uppercase;
   --section-title-margin : 0;
-  --section-title-color : var(--color-black)
+  --section-title-color : var(--color-black);
 }
 html {
   scroll-behavior: smooth;
@@ -33,12 +33,11 @@ body {
   font-weight: var(--font-weight-regular);
   line-height: var(--line-height-base);
 }
-a {color: var(--text-color);
+a[href] {
+  color: var(--text-color);
   text-decoration: none;
 }
-a[href]{
-  text-decoration: none;
-}
+
 a[href]:visited {
   font-style: italic;
 }
