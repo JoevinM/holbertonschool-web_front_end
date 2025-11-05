@@ -459,9 +459,6 @@
     font-family: var(--font-family-title);
     font-weight: var(--font-weight-bold);
   }
-  .footer{
-    padding: var(--footer-padding);
-  }
   .navbar-menu {
     float: right;
   }
@@ -509,3 +506,6 @@
   .footer ul {
     text-align: right;
   }
+  .footer {
+    padding: var(--footer-padding);
+}
