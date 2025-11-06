@@ -177,7 +177,6 @@
     --nav-item-letter-spacing: 0.04rem;
     --nav-item-display: inline-block;
     --nav-item-margin: 0 0 3rem 0;
-    --nav-item-link-hover: var(--color-primary);
     --nav-item-link-hover: var(--color-white);
     --section-tagline-margin: 0;
     --button-display: inline-block;
@@ -189,7 +188,6 @@
     --button-hover-color: var(--color-white);
     --button-hover-text-decoration: none;
     --button-hover-background: var(--color-primary);
-    /* --- Variables du header (Task 28) --- */
     --header-padding: 4rem 0 0;
     --header-logo-position: relative;
     --header-logo-link-display: inline-block;
@@ -277,6 +275,7 @@
     padding: 0;
     list-style: none;
     text-align: center;
+    position: relative;
   }
 
   .nav .nav-item {
@@ -286,14 +285,19 @@
     letter-spacing: var(--nav-item-letter-spacing);
     display: var(--nav-item-display);
     margin: var(--nav-item-margin);
+    position: relative;
   }
 
   .nav .nav-link {
     display: block;
     padding: 0.5rem 1rem;
+    position: relative;
   }
 
   .nav .nav-link:hover { color: var(--nav-item-link-hover); }
+
+  /* === Task 29: Styling and custom properties for the nav === */
+
   .nav .nav-link::before {
     content: "";
     position: absolute;
@@ -308,6 +312,8 @@
     background-color: var(--color-primary);
     width: 100%;
   }
+
+  /* === Reste des styles === */
 
   ul.row {
     margin: 0;
@@ -407,8 +413,6 @@
   .section-hero .section-inner {
     padding: 10rem 40rem 2rem 0;
   }
-
-  /* === Task 28: Fixing the header and menu navigation bar === */
 
   .header {
     padding: var(--header-padding);
